@@ -1,71 +1,82 @@
 # AI Workforce – Intelligent Time Management System
 
-## 1. Giới thiệu
+**AI Workforce** là hệ thống quản lý thời gian và lập lịch công việc thông minh, được phát triển bằng Python và Streamlit. Dự án hỗ trợ người dùng quản lý công việc, thiết lập thời gian rảnh và tự động xây dựng lịch trình dựa trên deadline, mức độ ưu tiên và khả năng đáp ứng của quỹ thời gian.
 
-**AI Workforce** là hệ thống quản lý thời gian và lập lịch công việc thông minh, hỗ trợ người dùng quản lý danh sách công việc, thiết lập thời gian rảnh và tự động sắp xếp lịch trình.
+**Version:** 0.1.0  
+**Status:** Under Development  
+**Language:** Python
 
-Hệ thống được xây dựng bằng Python và Streamlit, tập trung vào việc tối ưu thời gian thực hiện công việc dựa trên deadline, mức độ ưu tiên và thời gian rảnh của người dùng.
+---
 
-## 2. Mục tiêu dự án
+## 1. Mục tiêu dự án
 
-- Quản lý công việc cá nhân.
-- Quản lý thời gian rảnh lặp lại hàng tuần.
-- Tự động lập lịch công việc.
+AI Workforce hướng đến việc hỗ trợ người dùng sử dụng thời gian hiệu quả hơn thông qua các mục tiêu:
+
+- Quản lý danh sách công việc cá nhân.
+- Thiết lập thời gian rảnh có tính lặp lại hàng tuần.
+- Tự động sắp xếp lịch trình thực hiện công việc.
 - Ưu tiên công việc có deadline gần nhất.
 - Phân tích hiệu quả sử dụng thời gian.
 - Tiếp nhận yêu cầu tạo công việc bằng ngôn ngữ tự nhiên.
-- Đưa ra đề xuất cải thiện lịch trình.
+- Đưa ra đề xuất cải thiện lịch trình khi công việc chưa được sắp xếp.
 
-## 3. Công nghệ sử dụng
+## 2. Công nghệ sử dụng
 
 | Công nghệ | Vai trò |
 |---|---|
 | Python | Ngôn ngữ lập trình chính |
-| Streamlit | Xây dựng giao diện |
+| Streamlit | Xây dựng giao diện ứng dụng |
 | JSON | Lưu trữ dữ liệu |
 | unittest | Kiểm thử phần mềm |
-| YAML | Quản lý cấu hình |
+| YAML | Quản lý cấu hình lập lịch |
 
-## 4. Chức năng chính
+## 3. Chức năng chính
 
-### 4.1. Quản lý công việc
-- Thêm công việc.
+### 3.1. Quản lý công việc
+
+- Thêm công việc mới.
 - Xem danh sách công việc.
-- Cập nhật thông tin.
+- Cập nhật thông tin công việc.
 - Xóa công việc.
-- Đánh dấu hoàn thành.
+- Đánh dấu công việc đã hoàn thành.
 
-### 4.2. Quản lý thời gian rảnh
-- Thiết lập thời gian rảnh theo thứ trong tuần.
-- Lặp lại thời gian rảnh hàng tuần.
-- Kiểm tra khoảng thời gian trùng lặp.
+### 3.2. Quản lý thời gian rảnh
 
-### 4.3. Lập lịch tự động
-- Sắp xếp công việc theo deadline.
-- Ưu tiên theo mức độ quan trọng khi deadline bằng nhau.
+- Thiết lập thời gian rảnh theo từng ngày trong tuần.
+- Hỗ trợ lịch rảnh lặp lại hàng tuần.
+- Kiểm tra các khoảng thời gian bị trùng lặp.
+
+### 3.3. Lập lịch tự động
+
+- Sắp xếp công việc theo deadline gần nhất.
+- Ưu tiên mức độ quan trọng khi các công việc có cùng deadline.
 - Không chia nhỏ công việc.
 - Không xếp lịch vượt quá deadline.
-- Không xếp lịch vào thời gian đã qua.
+- Không xếp lịch vào những khoảng thời gian đã qua.
 
-### 4.4. Phân tích lịch trình
-- Thống kê công việc đã được xếp lịch.
-- Phân tích công việc chưa được xếp lịch.
+### 3.4. Phân tích lịch trình
+
+- Thống kê các công việc đã được xếp lịch.
+- Phân tích các công việc chưa được xếp lịch.
 - Đánh giá mức độ sử dụng thời gian rảnh.
 
-### 4.5. Xử lý ngôn ngữ tự nhiên
-Cho phép người dùng nhập yêu cầu bằng tiếng Việt để hệ thống trích xuất:
+### 3.5. Xử lý ngôn ngữ tự nhiên
+
+Cho phép người dùng nhập yêu cầu bằng tiếng Việt để hệ thống phân tích và trích xuất thông tin:
+
 - Tên công việc.
-- Thời lượng.
+- Thời lượng thực hiện.
 - Deadline.
 - Mức độ ưu tiên.
 
-### 4.6. Đề xuất điều chỉnh lịch
+### 3.6. Đề xuất điều chỉnh lịch trình
+
 - Đề xuất bổ sung thời gian rảnh.
 - Đề xuất mở rộng phạm vi lập lịch.
-- Đề xuất bổ sung khoảng thời gian liên tục.
-- Cảnh báo công việc chưa được xếp lịch.
+- Đề xuất bổ sung khoảng thời gian rảnh liên tục.
+- Cảnh báo các công việc chưa được xếp lịch.
 
-## 5. Cấu trúc dự án
+## 4. Cấu trúc dự án
 
 ```text
 AI-Workforce/
@@ -95,13 +106,19 @@ AI-Workforce/
 └── README.md
 ```
 
-## 6. Cài đặt và chạy dự án
+## 5. Cài đặt và chạy dự án
+
+### Yêu cầu
+
+- Python 3.x
+- Git
+- pip
 
 ### Bước 1: Clone repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd AI-Workforce
+git clone https://github.com/ShadowPacket07/Time-Management-AI-workforce.git
+cd Time-Management-AI-workforce
 ```
 
 ### Bước 2: Tạo môi trường ảo
@@ -110,9 +127,9 @@ cd AI-Workforce
 python -m venv .venv
 ```
 
-### Bước 3: Kích hoạt môi trường
+### Bước 3: Kích hoạt môi trường ảo
 
-Windows PowerShell:
+**Windows PowerShell:**
 
 ```powershell
 .venv\Scripts\Activate.ps1
@@ -124,13 +141,17 @@ Windows PowerShell:
 pip install -r requirements.txt
 ```
 
-### Bước 5: Chạy ứng dụng
+### Bước 5: Khởi chạy ứng dụng
 
 ```bash
 python -m streamlit run src/dashboard.py
 ```
 
-## 7. Kiểm thử
+Sau khi khởi chạy thành công, Streamlit sẽ cung cấp địa chỉ truy cập ứng dụng trên trình duyệt.
+
+## 6. Kiểm thử
+
+Dự án sử dụng thư viện `unittest` để kiểm thử các thành phần.
 
 Chạy toàn bộ bộ kiểm thử:
 
@@ -138,39 +159,41 @@ Chạy toàn bộ bộ kiểm thử:
 python -m unittest discover -s tests -p "test_*.py" -v
 ```
 
-## 8. Thuật toán lập lịch
+## 7. Nguyên lý hoạt động của thuật toán lập lịch
 
-Scheduling Engine thực hiện các bước:
+Scheduling Engine sử dụng chiến lược tham lam (Greedy Scheduling) với các bước chính:
 
 1. Lọc các công việc chưa hoàn thành.
-2. Sắp xếp theo deadline gần nhất.
+2. Sắp xếp công việc theo deadline gần nhất.
 3. Nếu deadline bằng nhau, xét mức độ ưu tiên.
-4. Sinh các khoảng thời gian rảnh theo tuần.
-5. Tìm khoảng thời gian liên tục đủ dài.
-6. Kiểm tra deadline.
-7. Tạo lịch cho công việc phù hợp.
-8. Đưa công việc không thể xếp lịch vào danh sách chưa được xếp lịch.
+4. Sinh các khoảng thời gian rảnh dựa trên lịch rảnh hàng tuần.
+5. Tìm khoảng thời gian liên tục đủ dài để thực hiện công việc.
+6. Kiểm tra tính hợp lệ của khoảng thời gian so với deadline.
+7. Tạo lịch cho các công việc đáp ứng điều kiện.
+8. Đưa các công việc không thể xếp lịch vào danh sách chưa được sắp xếp.
 
-## 9. Giới hạn hiện tại
+## 8. Giới hạn hiện tại
 
-- Dữ liệu được lưu bằng JSON, chưa sử dụng cơ sở dữ liệu chuyên dụng.
-- Bộ phân tích ngôn ngữ tự nhiên sử dụng quy tắc và biểu thức chính quy.
+- Dữ liệu được lưu trữ bằng JSON, chưa sử dụng hệ quản trị cơ sở dữ liệu chuyên dụng.
+- Natural Language Parser sử dụng quy tắc và biểu thức chính quy (Regular Expressions).
 - Recommendation Engine sử dụng các quy tắc đề xuất cơ bản.
-- Thuật toán lập lịch hiện tại sử dụng chiến lược tham lam (Greedy), chưa bảo đảm tìm được phương án tối ưu toàn cục.
+- Thuật toán lập lịch sử dụng chiến lược tham lam (Greedy), chưa bảo đảm tìm được phương án tối ưu toàn cục.
 
-## 10. Định hướng phát triển
+## 9. Định hướng phát triển
 
-- Tích hợp mô hình AI để hiểu yêu cầu ngôn ngữ tự nhiên tốt hơn.
-- Cải thiện thuật toán tối ưu lịch trình.
-- Tích hợp cơ sở dữ liệu.
-- Bổ sung đăng nhập và quản lý nhiều người dùng.
+- Tích hợp mô hình AI để cải thiện khả năng hiểu ngôn ngữ tự nhiên.
+- Nghiên cứu và cải thiện thuật toán tối ưu lịch trình.
+- Tích hợp hệ quản trị cơ sở dữ liệu.
+- Bổ sung chức năng đăng nhập và quản lý nhiều người dùng.
 - Tích hợp Google Calendar.
-- Xây dựng báo cáo và thống kê nâng cao.
+- Phát triển hệ thống báo cáo và thống kê nâng cao.
 
-## 11. Phiên bản
+## 10. Phiên bản dự án
 
-**Project:** AI Workforce
-
-**Version:** 0.1.0
-
-**Status:** Under Development
+| Thuộc tính | Giá trị |
+|---|---|
+| Project | AI Workforce |
+| Version | 0.1.0 |
+| Status | Under Development |
+| Language | Python |
+| Interface | Streamlit |
