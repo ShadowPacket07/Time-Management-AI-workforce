@@ -1,0 +1,29 @@
+
+# AI Workforce - Scheduling Rules
+
+# Cấu hình lịch học
+schedule:
+  timezone: "Asia/Ho_Chi_Minh"
+  week_start: "Monday"
+
+# Cấu hình thời gian 
+# Thời lượng học và nghỉ mặc định (đơn vị phút).
+time_blocks:
+  default_study_duration: 60
+  short_break: 10
+  long_break: 30
+
+# Quy tắc lập lịch
+rules:
+  avoid_schedule_conflicts: true
+  allow_task_rescheduling: true
+  prioritize_deadlines: true
+  respect_user_availability: true
+
+# Phân loại mức độ ưu tiên
+priority:
+  levels:
+    - low
+    - medium
+    - high
+    - urgent

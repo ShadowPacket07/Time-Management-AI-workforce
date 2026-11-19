@@ -1,0 +1,74 @@
+[
+    {
+        "task_id": "ff400e51-e7d9-4a79-8fbd-9a60b8620f44",
+        "title": "Kiểm tra JSON Persistence",
+        "duration_minutes": 60,
+        "priority": "high",
+        "deadline": null,
+        "status": "pending",
+        "created_at": "2026-11-19T12:36:48.931464"
+    },
+    {
+        "task_id": "9791777b-5d0b-40d0-9c46-1667daa9dc2e",
+        "title": "học Python",
+        "duration_minutes": 120,
+        "priority": "high",
+        "deadline": "2026-11-25T23:59:59",
+        "status": "pending",
+        "created_at": "2026-11-19T14:35:23.940478"
+    },
+    {
+        "task_id": "e667e89a-0781-4b50-9fc6-95de753d22c5",
+        "title": "Kiểm tra JSON Persistence",
+        "duration_minutes": 60,
+        "priority": "high",
+        "deadline": null,
+        "status": "pending",
+        "created_at": "2026-11-19T15:03:31.762906"
+    },
+    {
+        "task_id": "115ea6d7-d7e3-46de-946a-e17c1863efb1",
+        "title": "Ôn tập SQL",
+        "duration_minutes": 60,
+        "priority": "medium",
+        "deadline": null,
+        "status": "pending",
+        "created_at": "2026-11-19T15:03:31.780519"
+    },
+    {
+        "task_id": "0c7e70b9-b4b6-475a-91c8-e5d7d81a97e0",
+        "title": "Đọc tài liệu Linux",
+        "duration_minutes": 45,
+        "priority": "low",
+        "deadline": null,
+        "status": "pending",
+        "created_at": "2026-11-19T15:03:31.782822"
+    },
+    {
+        "task_id": "bacb3a5e-06aa-40f4-b864-e52baa64abef",
+        "title": "Kiểm tra JSON Persistence",
+        "duration_minutes": 60,
+        "priority": "high",
+        "deadline": null,
+        "status": "pending",
+        "created_at": "2026-11-19T15:13:10.766040"
+    },
+    {
+        "task_id": "9caf1b62-7578-4f77-8c43-d4ca8018c398",
+        "title": "Ôn tập SQL",
+        "duration_minutes": 60,
+        "priority": "medium",
+        "deadline": null,
+        "status": "pending",
+        "created_at": "2026-11-19T15:13:10.800883"
+    },
+    {
+        "task_id": "94d44404-6691-42ba-98b2-d4c267f300a6",
+        "title": "Đọc tài liệu Linux",
+        "duration_minutes": 45,
+        "priority": "low",
+        "deadline": null,
+        "status": "pending",
+        "created_at": "2026-11-19T15:13:10.802490"
+    }
+]
